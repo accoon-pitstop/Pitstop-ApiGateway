@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{25FC06A3-DCA5-498C-8A06-73258D6FAA71}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{D6ACD3EF-6D30-442B-BBEF-5E8117EE2BEF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{08A69D66-B751-4C9E-AD5E-7FB57E66A3E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pitstop.ApiGateway", "src\Pitstop.ApiGateway\Pitstop.ApiGateway.csproj", "{034D132B-2E0A-40F1-9985-6C59D19376BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{034D132B-2E0A-40F1-9985-6C59D19376BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{034D132B-2E0A-40F1-9985-6C59D19376BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{034D132B-2E0A-40F1-9985-6C59D19376BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{034D132B-2E0A-40F1-9985-6C59D19376BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{034D132B-2E0A-40F1-9985-6C59D19376BA} = {25FC06A3-DCA5-498C-8A06-73258D6FAA71}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BF56D5D5-65D8-44C9-BEA5-C83A4AA6C81C}
+	EndGlobalSection
+EndGlobal
