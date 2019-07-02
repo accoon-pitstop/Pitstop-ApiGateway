@@ -19,6 +19,7 @@ namespace Pitstop.ApiGateway
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
+            .ConfigureAppConfiguration(ic => ic.AddJsonFile("ocelot.json"))
                 .UseStartup<Startup>();
     }
 }

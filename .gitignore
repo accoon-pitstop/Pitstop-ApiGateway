@@ -4,3 +4,5 @@
 
 /src/Pitstop.ApiGateway/obj
 /.vs/Accoon.Pitstop.ApiGateway/v15
+/.vs/config
+/src/Pitstop.ApiGateway/bin/Debug/netcoreapp2.2
