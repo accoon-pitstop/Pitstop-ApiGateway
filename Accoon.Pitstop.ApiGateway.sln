@@ -8,6 +8,14 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{D6ACD3EF-6D30-442B-BBEF-5E8117EE2BEF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{08A69D66-B751-4C9E-AD5E-7FB57E66A3E7}"
+	ProjectSection(SolutionItems) = preProject
+		.travis.yml = .travis.yml
+		scripts\docker-build-local.sh = scripts\docker-build-local.sh
+		scripts\docker-publish.sh = scripts\docker-publish.sh
+		scripts\dotnet-build-local.sh = scripts\dotnet-build-local.sh
+		scripts\dotnet-build.sh = scripts\dotnet-build.sh
+		scripts\dotnet-publish.sh = scripts\dotnet-publish.sh
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pitstop.ApiGateway", "src\Pitstop.ApiGateway\Pitstop.ApiGateway.csproj", "{034D132B-2E0A-40F1-9985-6C59D19376BA}"
 EndProject
