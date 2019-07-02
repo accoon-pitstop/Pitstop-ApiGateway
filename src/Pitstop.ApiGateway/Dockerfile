@@ -1,19 +1,8 @@
-FROM microsoft/dotnet:2.2-aspnetcore-runtime AS base
+FROM mcr.microsoft.com/dotnet/core/aspnet:2.2
 WORKDIR /app
-EXPOSE 80
-
-FROM microsoft/dotnet:2.2-sdk AS build
-WORKDIR /src
-COPY ["src/Pitstop.ApiGateway/Pitstop.ApiGateway.csproj", "src/Pitstop.ApiGateway/"]
-RUN dotnet restore "src/Pitstop.ApiGateway/Pitstop.ApiGateway.csproj"
-COPY . .
-WORKDIR "/src/src/Pitstop.ApiGateway"
-RUN dotnet build "Pitstop.ApiGateway.csproj" -c Release -o /app
-
-FROM build AS publish
-RUN dotnet publish "Pitstop.ApiGateway.csproj" -c Release -o /app
-
-FROM base AS final
-WORKDIR /app
-COPY --from=publish /app .
-ENTRYPOINT ["dotnet", "Pitstop.ApiGateway.dll"]
+RUN ls
+COPY ./bin/docker .
+ENV ASPNETCORE_URLS http://*:5000
+ENV ASPNETCORE_ENVIRONMENT docker
+EXPOSE 5000
+ENTRYPOINT dotnet Pitstop.ApiGateway.dll
